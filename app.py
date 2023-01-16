@@ -81,32 +81,32 @@ if (selected == 'Diabetes Prediction'):
         e = st.text_input('Diabetes Pedigree Function value')
     
     with col2:
-        f= st.text_input('Age of the Person')
+        f= st.text_input('Age of the Peon')
     with col3:
-        g= st.text_input('Blood Pressure value')
+        g= st.text_input('Blood Pressuvalue')
     
     with col1:
-        h = st.text_input('Skin Thickness value')
+        h = st.text_input('Skin Thicdess value')
     
     with col2:
-        i= st.text_input('Insulin Level')
+        i= st.text_input('Insuliwd Level')
     
     with col3:
-        j = st.text_input('BMI value')
+        j = st.text_input('BMI dewdvalue')
     
     with col1:
-        k= st.text_input('Diabetes Pedigree Function value')
+        k= st.text_input('Diabetes Pedigree Funedction value')
     
     with col2:
-        l = st.text_input('Age of the Person')
+        l = st.text_input('Age of theed Person')
     with col3:
-        m = st.text_input('BMI value')
+        m = st.text_input('BMI valeceue')
     
     with col1:
-        n= st.text_input('Diabetes Pedigree Function value')
+        n= st.text_input('Diabetes Pedigree Fdeceunction value')
     
     with col2:
-        o = st.text_input('Age of the Person')
+        o = st.text_input('Age of the Perkdmson')
     
     
     
