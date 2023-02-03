@@ -13,73 +13,73 @@ finalmodel = pickle.load(open('finalmodel.sav', 'rb'))
 # sidebar for navigation
 with st.sidebar:
     
-    selected = option_menu('Air Quality prediction',
+    selected = option_menu('Water Quality prediction BY- Anshul Kunwar',
                           
-                          ['Air Quality'],
+                          ['Water Quality'],
                           icons=['activity'],
                           default_index=0)
     
     
-if (selected == 'Air Quality'):
+if (selected == 'Water Quality'):
     
     # page title
-    st.title('Air Quality Prediction using ML')
+    st.title('Water Quality Prediction using ML')
     
     
     # getting the input data from the user
     col1, col2, col3 = st.columns(3)
     
     with col1:
-        Pregnancies = st.text_input('age')
+        Pregnancies = st.text_input('Index')
         
     with col2:
-        Glucose = st.text_input('nsdc dcc')
+        Glucose = st.text_input('pH')
     
     with col3:
-        BloodPressure = st.text_input('Blood Pressure value')
+        BloodPressure = st.text_input('Iron')
     
     with col1:
-        SkinThickness = st.text_input('Skin Thickness value')
+        SkinThickness = st.text_input('Nitrate')
     
     with col2:
-        Insulin = st.text_input('Insulin Level')
+        Insulin = st.text_input('Chloride')
     
     with col3:
-        BMI = st.text_input('BMI value')
+        BMI = st.text_input('Lead')
     
     with col1:
-        DiabetesPedigreeFunction = st.text_input('Diabetes Pedigree Fuefdenction value')
+        DiabetesPedigreeFunction = st.text_input('Zinc')
     
     with col2:
-        Age = st.text_input('Age of the edPerson')
+        Age = st.text_input('Turbudity')
     with col3:
-        a = st.text_input('Blood Pressuredd value')
+        a = st.text_input('Fluoride')
     
     with col1:
-        b = st.text_input('Skin Thicknesdedes value')
+        b = st.text_input('Copper')
     
     with col2:
-        c = st.text_input('Insulin Ldedevel')
+        c = st.text_input('Odor')
     
     with col3:
-        d = st.text_input('BMI ded')
+        d = st.text_input('Sulfate')
     
     with col1:
-        e = st.text_input('Diabetes Pedigree Funcewdewtion value')
+        e = st.text_input('Conductivity')
     
     with col2:
-        f= st.text_input('Age of the Peon')
+        f= st.text_input('Chlorine')
     with col3:
-        g= st.text_input('Blood Pressuvalue')
+        g= st.text_input('Maganese')
     
     with col1:
-        h = st.text_input('Skin Thicdess value')
+        h = st.text_input('Total Dissolved solids')
     
     with col2:
-        i= st.text_input('Insuliwd Level')
+        i= st.text_input('Water Temperature')
         
     with col3:
-        j= st.text_input('jddjl')
+        j= st.text_input('Air Temperature')
     
     
     
@@ -90,12 +90,12 @@ if (selected == 'Air Quality'):
     
     # creating a button for Prediction
     
-    if st.button('Diabetes Test Result'):
+    if st.button('Water Quality Result'):
         diab_prediction = finalmodel.predict([[Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age,a,b,c,d,e,f,g,h,i,j]])
         if (diab_prediction[0] == 1):
-          diab_diagnosis = 'Good'
+          diab_diagnosis = 'Quality is Good'
         else:
-          diab_diagnosis = 'bad'
+          diab_diagnosis = 'Quality is Bad'
 
         
     st.success(diab_diagnosis)
