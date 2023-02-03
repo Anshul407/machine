@@ -91,7 +91,7 @@ if (selected == 'Diabetes Prediction'):
     with col2:
         i= st.text_input('Insuliwd Level')
     with col3:
-        i= st.text_input('jddjl')
+        j= st.text_input('jddjl')
     
     
     
@@ -103,7 +103,7 @@ if (selected == 'Diabetes Prediction'):
     # creating a button for Prediction
     
     if st.button('Diabetes Test Result'):
-        diab_prediction = diabetes_model.predict([[Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age,a,b,c,d,e,f,g,h,i]])
+        diab_prediction = diabetes_model.predict([[Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age,a,b,c,d,e,f,g,h,i,j]])
         print(diab_prediction)
 
         
