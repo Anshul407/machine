@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sun May  8 21:01:15 2022
-
-@author: siddhardhan
-"""
 
 import pickle
 import streamlit as st
@@ -105,7 +100,10 @@ if (selected == 'Diabetes Prediction'):
     
     if st.button('Diabetes Test Result'):
         diab_prediction = diabetes_model.predict([[Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age,a,b,c,d,e,f,g,h,i,j]])
-        print(diab_prediction)
+        if (diab_prediction[0] == 1):
+          diab_diagnosis = 'Good'
+        else:
+          diab_diagnosis = 'bad'
 
         
     st.success(diab_diagnosis)
