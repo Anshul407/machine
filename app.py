@@ -12,7 +12,7 @@ from streamlit_option_menu import option_menu
 
 # loading the saved models
 
-diabetes_model = pickle.load(open('cancer_pred.sav', 'rb'))
+diabetes_model = pickle.load(open('finalmodel.sav', 'rb'))
 
 heart_disease_model = pickle.load(open('heart_disease_model.sav', 'rb'))
 
@@ -90,23 +90,8 @@ if (selected == 'Diabetes Prediction'):
     
     with col2:
         i= st.text_input('Insuliwd Level')
-    
     with col3:
-        j = st.text_input('BMI dewdvalue')
-    
-    with col1:
-        k= st.text_input('Diabetes Pedigree Funedction value')
-    
-    with col2:
-        l = st.text_input('Age of theed Person')
-    with col3:
-        m = st.text_input('BMI valeceue')
-    
-    with col1:
-        n= st.text_input('Diabetes Pedigree Fdeceunction value')
-    
-    with col2:
-        o = st.text_input('Age of the Perkdmson')
+        i= st.text_input('jddjl')
     
     
     
@@ -118,7 +103,7 @@ if (selected == 'Diabetes Prediction'):
     # creating a button for Prediction
     
     if st.button('Diabetes Test Result'):
-        diab_prediction = diabetes_model.predict([[Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age,a,b,c,d,e,f,g,h,i,k,l,m,n,o]])
+        diab_prediction = diabetes_model.predict([[Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age,a,b,c,d,e,f,g,h,i]])
         print(diab_prediction)
 
         
