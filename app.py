@@ -90,6 +90,7 @@ if (selected == 'Diabetes Prediction'):
     
     with col2:
         i= st.text_input('Insuliwd Level')
+        
     with col3:
         j= st.text_input('jddjl')
     
