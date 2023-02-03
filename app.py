@@ -20,7 +20,7 @@ with st.sidebar:
                           default_index=0)
     
     
-if (selected == 'Air Quality prediction'):
+if (selected == 'Air Quality'):
     
     # page title
     st.title('Air Quality Prediction using ML')
